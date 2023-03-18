@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
-    <header>
-        <p>hello</p>
-    </header>
+
 </head>
+
 <body>
-    
+    <header>
+        <div class="startSection">
+            <h1>Quiz Challenge</h1>
+            <p>
+                Press Start to begin the quiz!
+            </p>
+            <button class="startBtn">
+                Start
+            </button>
+        </div>
+
+        <div class="quizSection" style="display: none">
+            <h3 class="question"> </h3>
+            <ul class="answerOptions">
+                <li class="li1"><button class="ansBtn1">answer1</button></li>
+                <li class="li2"><button class="ansBtn2">answer2</button></li>
+                <li class="li3"><button class="ansBtn3">answer3</button></li>
+                <li class="li4"><button class="ansBtn4">answer4</button></li>
+            </ul>
+
+        </div>
+        <div class="highScores" style="display: none">
+            <h1 class="highScoresHeader">
+                High Scores
+            </h1>
+            <p class="scoresList">
+
+            </p>
+            <button class="restart">
+                Play Again
+            </button>
+        </div>
+    </header>
+    <script src="./script.js"></script>
 </body>
+
 </html>
